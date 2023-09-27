@@ -3,6 +3,7 @@ package com.anangkur.androidstudioplayground
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.widget.AppCompatButton
 
@@ -22,6 +23,9 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        val tv1: TextView = findViewById(R.id.app_name)
+        tv1.text = "Aplikasi Willy"
 
         val debug = Debug(
             "ini log verbose",
